@@ -1,8 +1,8 @@
 @import url(alert/alert-light.css);
 @import url(avatar/avatar.css);
 @import url(image/image.css);
-/* @import url(button/button.css);
-@import url(badge/badge.css);
+@import url(button/button.css);
+/*@import url(badge/badge.css);
 @import url(card/card.css); */
 
 
@@ -11,16 +11,11 @@
 /* ------------- */
 
 :root{
-    /* colors */
-    /* --primary-color: #FD7014; */
-    /* --text-color: #fff;
-    --complementary-color: #000;
-    --secondary-color: #6c757d;
-    --box-shadow: 0 12px 8px -4px rgba(0, 0, 0, 0.5); */
 
     /* not specifying rgb because I want to change alpha value later on */
 
     --color-primary: rgb(145, 128, 196);
+    --color-primary-values: 145, 128, 196;
     /* --color-primary: rgb(253, 112, 20); */
     
     --color-white: rgb(247, 247, 247);
@@ -30,6 +25,8 @@
     --color-dark-values: 11, 13, 23;
 
     --color-secondary: rgb(156,163,175);
+    --color-secondary-values: 156,163,175;
+    
     --color-complementary: rgb(11, 13, 23);
     --color-complementary-values: 11, 13, 23;
 
@@ -102,7 +99,6 @@
 body {
     line-height: 1.5;
     min-height: 100vh;
-    line-height: 1.1;
     font-family: var(--ffamily-sans-normal);
     font-size: var(--fsize-300);
     background-color: var(--color-light);

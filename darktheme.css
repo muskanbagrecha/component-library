@@ -1,8 +1,8 @@
 @import url(alert/alert-dark.css);
 @import url(avatar/avatar.css);
 @import url(image/image.css);
-/* @import url(button/button.css);
-@import url(badge/badge.css);
+@import url(button/button.css);
+/* @import url(badge/badge.css);
 @import url(card/card.css); */
 
 /* ------------- */
@@ -16,17 +16,9 @@ html {
 
 
 :root {
-    /* --primary-color: #FD7014;
-    --text-color: #fff;
-    --complementary-color: #fff;
-    --background-color: rgba(10, 10, 10, 0.95);
-    --secondary-color: #6c757d;*/
 
     --color-primary: rgb(145, 128, 196);
-    /* --color-primary: #b700ff; */
     --color-primary-values: 145, 128, 196;
-
-    /* --color-primary: rgb(253, 115, 23); */
 
     --color-white: rgb(247, 247, 247);
     --color-dark: rgb(11, 13, 23);
@@ -103,21 +95,10 @@ html {
 body {
     line-height: 1.5;
     min-height: 100vh;
-    line-height: 1.1;
     font-family: var(--ffamily-sans-normal);
     font-size: var(--fsize-300);
     background-color: var(--color-dark);
     color: var(--color-primary);
-}
-
-.container{
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.grid-container{
-    display: grid;
 }
 
 .large-title{
@@ -129,9 +110,3 @@ body {
     font-family: var(--ff-serif);
     margin-top: 1rem;
 }
-
-/* @media screen and (min-width: 768px) {
-    .grid-container{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-} */

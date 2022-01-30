@@ -12,10 +12,6 @@
     --primary-info-gradient: linear-gradient(90deg, rgba(204, 229, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     --primary-info-text: rgb(152, 152, 248);
 
-
-    /* --primary-themed-gradient: linear-gradient(90deg, rgba(145, 128, 196, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
-    --primary-themed-text: var(--color-primary); */
-
     --primary-themed-gradient: linear-gradient(90deg, rgba(145, 128, 196, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
 
     --secondary-alert-text: #add2f0;
@@ -28,9 +24,7 @@
     align-items: center;
     padding: var(--spacing-medium) var(--spacing-small);
     margin: var(--spacing-small);
-    /* width: 40%; */
     min-width: 17rem;
-    /* max-width: 22rem;  */
     border-radius: var(--bradius-small);
     font-size: var(--fsize-300);
     font-weight: 400;
@@ -66,11 +60,13 @@
 
 .alert-info{
     color: var(--secondary-alert-text);
+    background: var(--alert-background-color);
     background: var(--primary-themed-gradient);
 }
 
 .alert-secondary{
     color: var(--color-secondary);
+    background: var(--alert-background-color);
     background: var(--primary-themed-gradient);
 }
 
@@ -88,7 +84,6 @@
 .alert-outlined::before{
     border: 0;
 }
-
 
 .icon, .fas, .fa, .far, .fal, .fab{
     color: currentColor;
