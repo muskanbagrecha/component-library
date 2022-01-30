@@ -1,0 +1,123 @@
+@import url(alert/alert-light.css);
+@import url(avatar/avatar.css);
+/* @import url(button/button.css);
+@import url(image/image.css);
+@import url(badge/badge.css);
+@import url(card/card.css); */
+
+
+/* ------------- */
+/* Setting up the custom properties */
+/* ------------- */
+
+:root{
+    /* colors */
+    /* --primary-color: #FD7014; */
+    /* --text-color: #fff;
+    --complementary-color: #000;
+    --secondary-color: #6c757d;
+    --box-shadow: 0 12px 8px -4px rgba(0, 0, 0, 0.5); */
+
+    /* not specifying rgb because I want to change alpha value later on */
+
+    --color-primary: rgb(145, 128, 196);
+    /* --color-primary: rgb(253, 112, 20); */
+    
+    --color-white: rgb(247, 247, 247);
+    --color-white-values: 247, 247, 247;
+
+    --color-dark : rgb(11, 13, 23);
+    --color-dark-values: 11, 13, 23;
+
+    --color-secondary: rgb(156,163,175);
+    --color-complementary: rgb(11, 13, 23);
+    --color-complementary-values: 11, 13, 23;
+
+    --color-current: rgb(247, 247, 247);
+    --box-shadow: 0 12px 8px -4px rgba(0, 0, 0, 0.5);
+
+
+    /* font-size */
+    --fsize-700: 4rem;
+    --fsize-600: 3rem;
+    --fsize-500: 2rem;
+    --fsize-400: 1.5rem;
+    --fsize-300: 1.25rem;
+    --fsize-200: 1rem;
+    --fsize-100: 0.875rem;
+
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+
+
+    /* font-weight */
+    --fweight-black: 900;
+    --fweight-bold: 700;
+    --fweight-semibold: 600;
+    --fweight-regular: 500;
+    --fweight-light: 300;
+
+    /* border radius */
+    --bradius-small: 5px;
+    --bradius-medium: 10px;
+    --bradius-large: 20px;
+    --bradius-full: 50%;
+
+    /* spacing */
+    --spacing-xsmall: 0.25rem;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+    --spacing-xlarge: 2rem;
+    --spacing-xxlarge: 3rem;
+}
+
+/* ------------- */
+/* reset */
+/* ------------- */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Remove animations for people who might have turned them off.  */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*  Set up the body  */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    line-height: 1.1;
+    font-family: var(--ffamily-sans-normal);
+    font-size: var(--fsize-300);
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+
+.grid-container{
+    display: grid;
+}
+
+.large-title{
+    font-size: var(--fsize-700);
+    font-weight: var(--fweight-regular);
+    color: var(--color-primary);
+    display: block;
+    text-align: center;
+    font-family: var(--ff-serif);
+}

@@ -1,0 +1,108 @@
+:root{
+    --primary-danger-bg: rgb(248, 224, 222);
+    --primary-danger-text: rgb(255, 0, 0);
+    --primary-success-bg: rgb(220, 247, 232);
+    --primary-success-text: rgb(2, 126, 56);
+    --primary-warning-bg: rgb(254, 251, 230);
+    --primary-warning-text: rgb(233, 175, 59);
+    --primary-info-bg: rgb(230, 247, 255);
+    --primary-info-text: rgb(0, 64, 133);
+    --secondary-alert-bg: rgb(226, 227, 229);
+    --secondary-alert-text: rgb(56, 61, 65);
+}
+
+
+.alert{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-medium) var(--spacing-small);
+    margin: var(--spacing-small);
+    /* width: 40%; */
+    min-width: 17rem;
+    /* max-width: 22rem;  */
+    border-radius: var(--bradius-small);
+    font-size: var(--fsize-300);
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+/* This is for the solid color left border on alerts */
+.alert::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: solid 2px currentColor;
+}
+
+.alert-success{
+    background-color: var(--primary-success-bg);
+    color: var(--primary-success-text);
+}
+
+.alert-danger{
+    background-color: var(--primary-danger-bg);
+    color: var(--primary-danger-text);
+}
+
+.alert-warning{
+    background-color: var(--primary-warning-bg);
+    color: var(--primary-warning-text);
+}
+
+.alert-info{
+    background-color: var(--primary-info-bg);
+    color: var(--primary-info-text);
+}
+
+.alert-secondary{
+    background-color: var(--secondary-alert-bg);
+    color: var(--secondary-alert-text);
+}
+.alert-themed{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+/* outlined alerts */
+
+.alert-outlined{
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+
+.alert-themed.alert-outlined{
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.alert-outlined::before{
+    border: 0;
+}
+
+
+/* icon styling for alerts */
+
+.icon, .fas, .fa, .far, .fal, .fab{ /* mention in doc to use .icon for fa icons */
+    color: currentColor;
+    font-size: var(--fsize-300);
+    padding-right: 1rem;
+    padding-left: 0.7rem;
+}
+
+.icon-close, .fa-close{ /* mention in doc to use .icon-close for close icon*/
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+/* Documentation pointers: to remove later
+Success message: added to cart
+danger message: Invalid password
+show js code to close the alert
+show dark theme and light theme seperately
+import diff version in respective component css
+outlined alert 
+*/
