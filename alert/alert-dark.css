@@ -16,7 +16,7 @@
     /* --primary-themed-gradient: linear-gradient(90deg, rgba(145, 128, 196, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
     --primary-themed-text: var(--color-primary); */
 
-    --primary-themed-gradient: linear-gradient(90deg, rgba(145, 128, 196, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+    --primary-themed-gradient: linear-gradient(90deg, rgba(145, 128, 196, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
 
     --secondary-alert-text: #add2f0;
     --alert-background-color: rgba(255, 255, 255, 0.1);
@@ -34,7 +34,7 @@
     border-radius: var(--bradius-small);
     font-size: var(--fsize-300);
     font-weight: 400;
-    margin: 1rem 0;
+    margin: 1rem 5px;
 }
 
 .alert::before{
