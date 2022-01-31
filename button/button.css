@@ -69,6 +69,7 @@
 /* Icon buttons  */
 .btn-icon {
     cursor: pointer;
+    color: var(--color-primary);
 }
 
 .btn-icon:hover {
@@ -86,12 +87,11 @@
     cursor: pointer;
     color: var(--color-complementary);
     padding-bottom: var(--spacing-xsmall);
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .btn-link-text:hover {
     color: var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
 }
 
 /* Secondary buttons */
@@ -124,7 +124,7 @@
 }
 
 
-.disabled{
+.button-disabled{
     opacity: 0.5;
     cursor: initial;
     box-shadow: none;
