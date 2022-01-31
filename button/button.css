@@ -124,7 +124,7 @@
 }
 
 
-.button-disabled{
+.btn-disabled{
     opacity: 0.5;
     cursor: initial;
     box-shadow: none;
