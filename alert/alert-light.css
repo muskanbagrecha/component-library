@@ -60,7 +60,7 @@
     color: var(--secondary-alert-text);
 }
 .alert-themed{
-    background-color: var(--color-primary);
+    background-color: rgba(var(--color-primary), 0.6);
     color: var(--color-dark);
 }
 
