@@ -1,0 +1,99 @@
+:root{
+    --primary-danger-gradient: linear-gradient(90deg, rgba(221, 44, 24, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+    --primary-danger-text: rgb(255, 0, 0);
+
+    --primary-success-gradient: linear-gradient(90deg, rgba(46, 204, 113, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    --primary-success-text: rgb(8, 207, 8);
+
+    --primary-warning-color: rgba(241, 196, 15, 0.2);
+    --primary-warning-gradient: linear-gradient(90deg, rgba(241, 196, 15, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    --primary-warning-text: orange;
+
+    --primary-info-gradient: linear-gradient(90deg, rgba(204, 229, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    --primary-info-text: rgb(152, 152, 248);
+
+    --primary-themed-gradient: linear-gradient(90deg, rgba(145, 128, 196, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+
+    --secondary-alert-text: #add2f0;
+    --alert-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.alert{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-medium) var(--spacing-small);
+    margin: var(--spacing-small);
+    min-width: 17rem;
+    border-radius: var(--bradius-small);
+    font-size: var(--fsize-300);
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.alert::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: solid 2px currentColor;
+}
+
+.alert-success{
+    color: var(--primary-success-text);
+    background: var(--alert-background-color);
+    background: var(--primary-success-gradient);
+}
+
+.alert-danger{
+    color: var(--primary-danger-text);
+    background: var(--alert-background-color);
+    background: var(--primary-danger-gradient);
+}
+
+.alert-warning{
+    color: var(--primary-warning-text);
+    background: var(--alert-background-color);
+    background: var(--primary-warning-gradient);
+}
+
+.alert-info{
+    color: var(--secondary-alert-text);
+    background: var(--alert-background-color);
+    background: var(--primary-themed-gradient);
+}
+
+.alert-secondary{
+    color: var(--color-secondary);
+    background: var(--alert-background-color);
+    background: var(--primary-themed-gradient);
+}
+
+.alert-themed{
+    color: var(--color-primary);
+    background: var(--color-primary);
+    background: var(--primary-themed-gradient);
+}
+
+.alert-outlined{
+    background: transparent;
+    border: 1px solid currentColor;
+}
+
+.alert-outlined::before{
+    border: 0;
+}
+
+.icon, .fas, .fa, .far, .fal, .fab{
+    color: currentColor;
+    font-size: var(--fsize-300);
+    padding-right: var(--spacing-medium);
+    padding-left: var(--spacing-small);
+}
+
+.icon-close, .fa-close{
+    cursor: pointer;
+    margin-left: auto;
+}
+
