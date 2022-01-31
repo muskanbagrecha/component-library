@@ -5,14 +5,14 @@
     display: inline-block;
     min-width: fit-content;
     border-radius: var(--spacing-small);
-    font-size: var(--fsize-200);
+    font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
     margin: var(--spacing-small);
     padding: var(--spacing-small) var(--spacing-medium);
-    letter-spacing: 1.5px;
     transition: all 0.3s ease 0s;
-    font-family: var(--ff-sans-normal);
+    font-family: var(--ff-serif);
+    border: 1px solid var(--color-light);
 }
 
 .btn-small{
@@ -33,7 +33,7 @@
 .btn-outline {
     background-color: transparent;
     border: 1px solid currentColor;
-    color: var(--primary-color);
+    color: var(--color-primary);
 }
 
 .btn-floating{
@@ -50,13 +50,13 @@
     top: 90%;
     left: 90%; */
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 .btn-primary:hover,
 .btn-outline:hover,
 .btn-floating:hover {
-    box-shadow: 0px 15px 20px rgba(var(--color-primary), 0.4);
+    box-shadow: 0px 10px 20px rgba(var(--color-primary-values), 0.6);
     transform: translateY(-3px);
 }
 
