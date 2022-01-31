@@ -16,8 +16,9 @@
 }
 
 .btn-small{
-    font-size: var(--fsize-100);
-    padding: var(--spacing-small) var(--spacing-small);
+    font-size: var(--fsize-200);
+    padding: var(--spacing-small) var(--spacing-medium);
+    letter-spacing: 1px;
 }
 
 .btn-large{
