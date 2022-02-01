@@ -118,6 +118,7 @@
     color: var(--color-complementary);
     padding-bottom: var(--spacing-xsmall);
     border-bottom: 1px solid var(--color-primary);
+    text-decoration-line: var(--color-primary);
 }
 
 .btn-link-text:hover {
