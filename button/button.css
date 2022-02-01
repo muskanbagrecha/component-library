@@ -108,7 +108,7 @@
 
 /* Additional styling for icons within text buttons */
 .btn>.icon {
-    font-size: var(--fsize-200);
+    font-size: var(--fsize-300);
 }
 
 
