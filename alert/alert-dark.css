@@ -85,9 +85,10 @@
     border: 0;
 }
 
-.icon, .fas, .fa, .far, .fal, .fab{
-    color: currentColor;
-    font-size: var(--fsize-300);
+.alert .icon, 
+.alert .fas, 
+.alert .fa,
+.alert .far {
     padding-right: var(--spacing-medium);
     padding-left: var(--spacing-small);
 }

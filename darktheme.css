@@ -110,3 +110,8 @@ body {
     font-family: var(--ff-serif);
     margin-top: 1rem;
 }
+
+.fas, .fa, .far, .fal, .fab{
+    color: currentColor;
+    font-size: var(--fsize-300);
+}

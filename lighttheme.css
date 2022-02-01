@@ -117,3 +117,8 @@ body {
     text-align: center;
     font-family: var(--ff-serif);
 }
+
+.fas, .fa, .far, .fal, .fab{
+    color: currentColor;
+    font-size: var(--fsize-300);
+}

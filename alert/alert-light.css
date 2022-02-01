@@ -83,18 +83,18 @@
 
 /* icon styling for alerts */
 
-.icon, .fas, .fa, .far, .fal, .fab{ /* mention in doc to use .icon for fa icons */
-    color: currentColor;
-    font-size: var(--fsize-300);
-    padding-right: 1rem;
-    padding-left: 0.7rem;
+.alert .icon, 
+.alert .fas, 
+.alert .fa,
+.alert .far {
+    padding-right: var(--spacing-medium);
+    padding-left: var(--spacing-small);
 }
 
-.icon-close, .fa-close{ /* mention in doc to use .icon-close for close icon*/
+.icon-close, .fa-close{
     cursor: pointer;
     margin-left: auto;
 }
-
 
 /* Documentation pointers: to remove later
 Success message: added to cart
