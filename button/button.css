@@ -13,7 +13,6 @@
     transition: all 0.3s ease 0s;
     font-family: var(--ff-serif);
     border: 1px solid var(--color-light);
-    padding: initial;
 }
 
 .btn-small{
@@ -154,7 +153,6 @@
     box-shadow: none;
 }
 
-
 .btn-disabled{
     opacity: 0.5;
     cursor: initial;
@@ -162,4 +160,5 @@
     transform: none;
     pointer-events: none;
 }
+
 

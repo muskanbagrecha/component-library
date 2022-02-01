@@ -121,4 +121,5 @@ body {
 .fas, .fa, .far, .fal, .fab{
     color: currentColor;
     font-size: var(--fsize-300);
+    padding: var(--spacing-small);
 }
