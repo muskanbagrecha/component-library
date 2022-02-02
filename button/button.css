@@ -14,7 +14,7 @@
     transition: all 0.3s ease 0s;
     font-family: var(--ff-serif);
     border: 1px solid var(--color-light);
-    min-width: 8rem; /* this is to maintain uniformity of buttons. */
+    min-width: 8rem; /* this is to maintain uniformity of buttons.*/
 }
 
 .btn-small{
