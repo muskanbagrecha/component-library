@@ -113,5 +113,5 @@ body {
 
 .fas, .fa, .far, .fal, .fab{
     font-size: var(--fsize-300);
-    padding: var(--spacing-small);
+    padding: 0 var(--spacing-small);
 }

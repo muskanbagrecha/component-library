@@ -85,6 +85,10 @@
     border: 0;
 }
 
+.alert .component-close{
+    margin-left: auto;
+}
+
 .alert .icon, 
 .alert .fas, 
 .alert .fa,
