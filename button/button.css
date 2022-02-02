@@ -3,8 +3,8 @@
     border: none;
     cursor: pointer;
     display: inline-block;
-    width: 8rem;
-    min-width: fit-content;
+    width: fit-content;
+    min-width: 8rem; /* this is to maintain uniformity of buttons.*/
     border-radius: var(--spacing-small);
     font-size: 1.3rem;
     text-align: center;
@@ -14,7 +14,6 @@
     transition: all 0.3s ease 0s;
     font-family: var(--ff-serif);
     border: 1px solid var(--color-light);
-    min-width: 8rem; /* this is to maintain uniformity of buttons.*/
 }
 
 .btn-small{
@@ -81,7 +80,8 @@
     right: 10px;
 }
 
-.btn-floating.float-on-screen{
+.btn-floating.float-on-screen{ 
+    /* this is to make the button float against viewport */
     position: fixed; 
 }
 
