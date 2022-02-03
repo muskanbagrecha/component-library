@@ -123,3 +123,7 @@ body {
     font-size: var(--fsize-300);
     padding: var(--spacing-small);
 }
+
+.red{
+    color: red;
+}
