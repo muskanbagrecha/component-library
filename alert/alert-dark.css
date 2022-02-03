@@ -1,13 +1,13 @@
 :root{
     --primary-danger-gradient: linear-gradient(90deg, rgba(221, 44, 24, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
-    --primary-danger-text: rgb(255, 0, 0);
+    --primary-danger-text: rgb(199, 28, 28);
 
     --primary-success-gradient: linear-gradient(90deg, rgba(46, 204, 113, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-    --primary-success-text: rgb(8, 207, 8);
+    --primary-success-text: rgb(56, 197, 56);
 
     --primary-warning-color: rgba(241, 196, 15, 0.2);
     --primary-warning-gradient: linear-gradient(90deg, rgba(241, 196, 15, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-    --primary-warning-text: orange;
+    --primary-warning-text: rgb(217, 140, 0);
 
     --primary-info-gradient: linear-gradient(90deg, rgba(204, 229, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     --primary-info-text: rgb(152, 152, 248);
@@ -85,9 +85,14 @@
     border: 0;
 }
 
-.icon, .fas, .fa, .far, .fal, .fab{
-    color: currentColor;
-    font-size: var(--fsize-300);
+.alert .component-close{
+    margin-left: auto;
+}
+
+.alert .icon, 
+.alert .fas, 
+.alert .fa,
+.alert .far {
     padding-right: var(--spacing-medium);
     padding-left: var(--spacing-small);
 }

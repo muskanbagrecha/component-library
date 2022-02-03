@@ -1,0 +1,128 @@
+:root{
+    --color-online: #1b7052;
+    --color-offline: #ff0019;
+    --color-away: #FFA500;
+}
+
+.badge{
+    position: absolute;
+    border-radius: var(--bradius-full);
+    border: 2px solid var(--color-white);
+    z-index: 1;
+}
+
+/* Status badges */
+
+.status-offline{
+    background-color: var(--color-offline);
+}
+
+.status-online{
+    background-color: var(--color-online);
+}
+
+.status-away{
+    background-color: var(--color-away);
+}
+
+.avatar-xl > .badge{
+    width: 2rem;
+    height: 2rem;
+    bottom: 0px;
+    right: 1.5rem; 
+}
+
+.avatar-l > .badge{
+    width: 1.6rem;
+    height: 1.6rem;
+    bottom: -4px;
+    right: 1.25rem;
+}
+
+.avatar-m > .badge{
+    width: 1.4rem;
+    height: 1.4rem;
+    bottom: -3px;
+    right: 10px;
+}
+
+.avatar-s > .badge{
+    width: 1.2rem;
+    height: 1.2rem;
+    bottom: -7px;
+    right: 6px;
+}
+
+.avatar-xs > .badge{
+    width: 1rem;
+    height: 1rem;
+    bottom: -6px;
+    right: 3px;
+}
+
+/* ---- badges with notifications (number) ----  */
+
+/* badge container is used only for icons */
+.icon-badge-container{
+    position: relative;
+    display: inline-block;
+    margin: var(--spacing-small);
+}
+
+.icon-badge-container i{
+    color: var(--color-complementary);
+}
+
+.badge-notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    width: 1.23rem;
+    height: 1.2rem;
+    font-size: var(--fsize-100);
+    color: var(--color-white);
+    padding: var(--spacing-small);
+}
+
+.badge-avatar{
+    border: 2px solid white;
+    background-color: var(--color-secondary);
+    font-weight: 300;
+}
+
+.badge-icon{
+    border: none;
+    background-color: var(--color-primary);
+}
+
+.badge-container a{
+    color: var(--color-white);
+}
+
+.fa-pencil{
+    padding: 2px;
+    color: white;
+}
+
+.avatar-xs .fa-pencil{
+    font-size: 9px;
+}
+
+.avatar-s .fa-pencil{
+    font-size: 10px;
+}
+
+.avatar-m .fa-pencil{
+    font-size: 12px;
+}
+
+.avatar-l .fa-pencil{
+    font-size: 13px;
+}
+
+.avatar-xl .fa-pencil{
+    font-size: 15px;
+}
