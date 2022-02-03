@@ -1,0 +1,168 @@
+/* regular buttons */
+.btn {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    width: fit-content;
+    min-width: 8rem; /* this is to maintain uniformity of buttons.*/
+    border-radius: var(--spacing-small);
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    margin: var(--spacing-small);
+    padding: var(--spacing-xsmall) var(--spacing-medium);
+    transition: all 0.3s ease 0s;
+    font-family: var(--ff-serif);
+    border: 1px solid var(--color-light);
+}
+
+.btn-small{
+    font-size: var(--fsize-200);
+    padding: var(--spacing-small) var(--spacing-medium);
+    letter-spacing: 1px;
+}
+
+.btn-large{
+    font-size: var(--fsize-400);
+    padding: var(--spacing-small) var(--spacing-large);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-complementary);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: var(--color-primary);
+}
+
+/*Floating buttons*/
+
+.btn-floating{
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--bradius-full);
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-current);
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    display: inline-block;
+    z-index: 2;
+}
+
+.btn-floating.top-left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.btn-floating.top-right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-floating.bottom-left{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.btn-floating.bottom-right{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btn-floating.float-on-screen{ 
+    /* this is to make the button float against viewport */
+    position: fixed; 
+}
+
+.btn-primary:hover,
+.btn-outline:hover,
+.btn-floating:hover {
+    box-shadow: 0px 10px 20px rgba(var(--color-primary-values), 0.6);
+    transform: translateY(-3px);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-current);
+    border: 1px solid var(--color-primary);
+}
+
+/* Icon buttons  */
+.btn-icon {
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.btn-icon:hover {
+    color: var(--color-complementary);
+}
+
+/* Additional styling for icons within text buttons */
+.btn>.icon {
+    font-size: var(--fsize-300);
+}
+
+
+/* Link text */
+.btn-link-text {
+    display: inline-block;
+    cursor: pointer;
+    color: var(--color-complementary);
+    padding-bottom: var(--spacing-xsmall);
+    border-bottom: 1px solid var(--color-primary);
+    text-decoration-line: var(--color-primary);
+}
+
+.btn-link-text:hover {
+    color: var(--color-primary);
+}
+
+/* Secondary buttons */
+.btn-secondary {
+    background: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+    box-shadow: none;
+    transform: none;
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn-secondary-outline {
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn-secondary-outline:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+}
+
+.btn-icon.btn-icon-secondary {
+    color: var(--color-secondary);
+    box-shadow: none;
+}
+
+.btn-disabled{
+    opacity: 0.5;
+    cursor: initial;
+    box-shadow: none;
+    transform: none;
+    pointer-events: none;
+}
+
+

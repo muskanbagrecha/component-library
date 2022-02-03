@@ -1,0 +1,117 @@
+@import url(alert/alert-dark.css);
+@import url(avatar/avatar.css);
+@import url(image/image.css);
+@import url(button/button.css);
+@import url(badge/badge.css);
+/* @import url(card/card.css); */
+
+/* ------------- */
+/* Setting up the custom properties */
+/* ------------- */
+
+
+html {
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --color-primary: rgb(145, 128, 196);
+    --color-primary-values: 145, 128, 196;
+
+    --color-white: rgb(247, 247, 247);
+    --color-dark: rgb(11, 13, 23);
+    --color-secondary: rgb(156, 163, 175);
+
+    --color-complementary: rgb(247, 247, 247);
+    --color-complementary-values: 247, 247, 247;
+
+    --color-current: rgb(11, 13, 23);
+    --box-shadow: 0 14px 8px -2px rgba(255, 255, 255, 0.3);
+
+    /* font-size */
+    --fsize-700: 4rem;
+    --fsize-600: 3rem;
+    --fsize-500: 2rem;
+    --fsize-400: 1.5rem;
+    --fsize-300: 1.25rem;
+    --fsize-200: 1rem;
+    --fsize-100: 0.875rem;
+
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+
+
+    /* font-weight */
+    --fweight-black: 900;
+    --fweight-bold: 700;
+    --fweight-semibold: 600;
+    --fweight-regular: 500;
+    --fweight-light: 300;
+
+    /* border radius */
+    --bradius-small: 5px;
+    --bradius-medium: 10px;
+    --bradius-large: 20px;
+    --bradius-full: 50%;
+
+    /* spacing */
+    --spacing-xsmall: 0.25rem;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+    --spacing-xlarge: 2rem;
+    --spacing-xxlarge: 3rem;
+}
+
+/* ------------- */
+/* reset */
+/* ------------- */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Remove animations for people who might have turned them off.  */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*  Set up the body  */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: var(--ffamily-sans-normal);
+    font-size: var(--fsize-300);
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+.large-title{
+    font-size: var(--fsize-700);
+    font-weight: var(--fweight-regular);
+    color: var(--color-primary);
+    display: block;
+    text-align: center;
+    font-family: var(--ff-serif);
+    margin-top: 1rem;
+}
+
+.fas, .fa, .far, .fal, .fab{
+    font-size: var(--fsize-300);
+    padding: 0 var(--spacing-small);
+}
