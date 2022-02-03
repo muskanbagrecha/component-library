@@ -1,0 +1,133 @@
+.card{
+    display: flex;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: #272626;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-white);
+    border-radius: var(--bradius-small);
+    background: rgba(255, 255, 255, 0.2);
+    margin: var(--spacing-medium);
+    color: var(--color-complementary);
+    font-family: 'Source Serif 4', sans-serif;
+    position: relative;
+}
+
+.card img{
+    max-height: 20rem;
+    min-height: 100%;
+} 
+
+.card__content *{
+    margin: 2px;
+}
+
+.card-horizontal{
+    max-width: 70rem;
+    min-width: min-content;
+    max-height: fit-content;
+}
+
+.card-vertical{
+    flex-direction: column;
+    max-width: 20rem;
+}
+
+.card-horizontal img{
+    border-radius: var(--bradius-small) 0 0 var(--bradius-small);
+}
+
+.card-vertical .card__img{
+    background-color: var(--color-white);
+    border-radius: var(--bradius-small) var(--bradius-small) 0 0;
+}
+
+.card-vertical img{
+    max-height: 17rem;
+    object-fit: contain;
+}
+
+.card__content{
+    padding: var(--spacing-small);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.8rem;
+    position: relative;
+}
+
+.card__header{
+    padding: 0;
+}
+
+.card__title{
+    font-size: var(--fsize-500);
+    font-weight: var(--fweight-semibold);
+}
+
+.card__subtitle{
+    font-size: var(--fsize-300);
+    font-weight: var(--fweight-regular);
+}
+
+.card__desc{
+    font-size: var(--fsize-200);
+    font-weight: var(--fweight-light);
+}
+
+.card__desc small{
+    color: var(--color-secondary);
+}
+
+.card__amount > *{
+    display: inline-block;
+}
+
+.strike-text{
+    color: var(--color-secondary);
+    font-size: var(--fsize-200);
+}
+
+.red-highlight{
+    color: red;
+    font-size: 1.1rem;
+}
+
+.card .component-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.card>.component-close:hover{
+    color: var(--color-secondary);
+}
+
+.overlay-container{
+    background-color: rgb(234,234, 236);
+    opacity: 0.2;
+}
+
+.overlay-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-secondary);
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color: var(--color-white);
+}
+
+ @media screen and (max-width: 680px){
+     .card-horizontal{
+        flex-direction: column;
+    }
+
+    .card-horizontal .card__img{
+        width: 100%;
+    }
+ }
+
