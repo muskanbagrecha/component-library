@@ -106,8 +106,8 @@
 }
 
 .overlay-container{
-    background-color: rgb(234,234, 236);
-    opacity: 0.2;
+    background-color: rgba(var(--color-current), 0.6);
+    pointer-events: none;
 }
 
 .overlay-text{
