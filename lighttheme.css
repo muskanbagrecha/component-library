@@ -14,7 +14,7 @@
 
     /* not specifying rgb because I want to change alpha value later on */
 
-    --color-primary: rgb(145, 128, 196);
+    --color-primary: #9180c4;
     --color-primary-values: 145, 128, 196;
     /* --color-primary: rgb(253, 112, 20); */
     
