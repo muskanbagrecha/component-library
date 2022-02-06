@@ -121,7 +121,7 @@
 
 .card__badge{
     position: absolute; /* wrt to card */
-    top: 2rem;
+    top: 1.5rem;
     width: fit-content;
     height: fit-content;
     font-size: var(--fsize-200);
@@ -130,7 +130,7 @@
     padding: 5px;
 }
 
-.card-text-only .card__img{
+.text-only .card__img{
     display: none;
 }
 

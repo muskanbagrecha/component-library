@@ -35,4 +35,23 @@
     pointer-events: none;
 }
 
+/* Form validation */
 
+.input-form .alert{
+    background: transparent;
+    border: none;
+    width: fit-content;
+    padding: 0;
+}
+
+.input-form .alert::before{
+    border: none;
+}
+
+.input-form .input-error{
+    border: 2px solid var(--primary-danger-text);
+}
+
+.input-form .input-success{
+    border: 2px solid var(--primary-success-text);
+}
