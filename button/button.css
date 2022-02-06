@@ -170,4 +170,14 @@
     pointer-events: none;
 }
 
-
+/* Card badge */
+.card__badge{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    background-color: var(--color-primary);
+    color: var(--color-complementary);
+    padding: 5px;
+    top: 2rem;
+    font-size: var(--fsize-200);
+}

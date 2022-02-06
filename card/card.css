@@ -1,15 +1,13 @@
 .card{
     display: flex;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    font-family: 'Source Serif 4', sans-serif;
+    color: var(--color-complementary);
     background-color: #272626;
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-white);
-    border-radius: var(--bradius-small);
     background: rgba(255, 255, 255, 0.2);
     margin: var(--spacing-medium);
-    color: var(--color-complementary);
-    font-family: 'Source Serif 4', sans-serif;
-    position: relative;
+    border-radius: var(--bradius-small);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .card img{
@@ -106,8 +104,7 @@
 }
 
 .overlay-container{
-    /* background-color: rgba(var(--color-current), 0.6); */
-    opacity: 0.5;
+    opacity: 0.3;
     pointer-events: none;
 }
 
@@ -121,6 +118,22 @@
     letter-spacing: 1px;
     color: var(--color-white);
 }
+
+.card__badge{
+    position: absolute; /* wrt to card */
+    top: 2rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: var(--fsize-200);
+    color: var(--color-complementary);
+    background-color: var(--color-primary);
+    padding: 5px;
+}
+
+.card-text-only .card__img{
+    display: none;
+}
+
 
  @media screen and (max-width: 680px){
      .card-horizontal{
