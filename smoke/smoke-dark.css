@@ -6,7 +6,7 @@ body{
     display: block;
 }
 
-video{
+.smoke-video{
     object-fit: cover;
     height: 80vh;
     width: 100%;

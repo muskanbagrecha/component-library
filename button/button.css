@@ -16,22 +16,27 @@
     border: 1px solid var(--color-light);
 }
 
-.btn-small{
-    font-size: var(--fsize-200);
-    padding: var(--spacing-small) var(--spacing-medium);
-    letter-spacing: 1px;
+/* Small button */
+.btn-small {
+        font-size: var(--fsize-200);
+        padding: var(--spacing-small) var(--spacing-medium);
+        letter-spacing: 1px;
+        min-width: fit-content;
 }
 
+/* Large button */
 .btn-large{
     font-size: var(--fsize-400);
     padding: var(--spacing-small) var(--spacing-large);
 }
 
+/* Primary button */
 .btn-primary {
     background-color: var(--color-primary);
     color: var(--color-complementary);
 }
 
+/* Outlined button */
 .btn-outline {
     background-color: transparent;
     border: 1px solid currentColor;
@@ -39,7 +44,6 @@
 }
 
 /*Floating buttons*/
-
 .btn-floating{
     width: 3.2rem;
     height: 3.2rem;
@@ -80,8 +84,8 @@
     right: 10px;
 }
 
+/* Make the button float against viewport */
 .btn-floating.float-on-screen{ 
-    /* this is to make the button float against viewport */
     position: fixed; 
 }
 
@@ -157,6 +161,7 @@
     box-shadow: none;
 }
 
+/* Disabled buttons */
 .btn-disabled{
     opacity: 0.5;
     cursor: initial;

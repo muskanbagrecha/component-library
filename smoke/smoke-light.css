@@ -1,3 +1,11 @@
 .smoke-effect{
     display: none;
 }
+
+.smoke-video{
+    display: none;
+}
+
+body{
+    background-color: var(--color-white);
+}
