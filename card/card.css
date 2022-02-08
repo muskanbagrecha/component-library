@@ -112,7 +112,7 @@
     background-color: var(--color-secondary);
     padding: 0.5rem;
     letter-spacing: 1px;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .card__badge{
