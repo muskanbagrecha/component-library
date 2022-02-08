@@ -1,3 +1,7 @@
+/* body{
+    background-color: var(--color-white);
+} */
+
 .smoke-effect{
     display: none;
 }
@@ -6,6 +10,3 @@
     display: none;
 }
 
-body{
-    background-color: var(--color-white);
-}
