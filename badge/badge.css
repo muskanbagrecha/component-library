@@ -8,7 +8,6 @@
     position: absolute;
     border-radius: var(--bradius-full);
     border: 2px solid var(--color-white);
-    z-index: 1;
 }
 
 /* Status badges */

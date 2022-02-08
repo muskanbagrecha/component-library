@@ -3,7 +3,9 @@
 @import url(image/image.css);
 @import url(button/button.css);
 @import url(badge/badge.css);
-/* @import url(card/card.css); */
+@import url(card/card.css);
+@import url(input/input.css);
+@import url(smoke/smoke-dark.css);
 
 /* ------------- */
 /* Setting up the custom properties */
@@ -29,6 +31,9 @@ html {
 
     --color-current: rgb(11, 13, 23);
     --box-shadow: 0 14px 8px -2px rgba(255, 255, 255, 0.3);
+
+    --card-background: rgba(255, 255, 255, 0.2);
+    --card-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     /* font-size */
     --fsize-700: 4rem;
@@ -114,4 +119,8 @@ body {
 .fas, .fa, .far, .fal, .fab{
     font-size: var(--fsize-300);
     padding: 0 var(--spacing-small);
+}
+
+.red{
+    color: red;
 }
