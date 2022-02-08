@@ -1,38 +1,29 @@
-.large-title{
-    font-size: var(--fsize-600);
-    font-weight: var(--fweight-regular);
-    color: var(--color-complementary);
-    display: block;
-    font-family: var(--ff-serif);
-}
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-    font-weight: 600;
     margin: var(--spacing-medium) 0;
 }
 
 .h1, h1{
-    font-size: var(--fsize-700);
-}
-
-.h2, h2{
     font-size: var(--fsize-600);
 }
 
-.h3, h3{
+.h2, h2{
     font-size: var(--fsize-500);
 }
 
-.h4, h4{
+.h3, h3{
     font-size: var(--fsize-400);
 }
 
+.h4, h4{
+    font-size: var(--fsize-300);
+}
+
 .h5, h5{
-    font-size: 1.35rem;
+    font-size: 1.15rem;
 }
 
 .h6, h6{
-    font-size: 1.15rem
+    font-size: 1rem
 }
 
 .strike-text{
@@ -64,11 +55,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 
 .small-text{
-    font-family: var(--fsize-200);
+    font-family: var(--fsize-100);
 }
 
 .highlight{
     color: var(--color-primary);
+}
+
+.large-title{
+    font-size: var(--fsize-600);
+    font-weight: var(--fweight-regular);
+    color: var(--color-complementary);
+    display: block;
+    font-family: var(--ff-serif);
 }
 
 @media screen and (max-width: 768px){
