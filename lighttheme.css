@@ -5,6 +5,7 @@
 @import url(badge/badge.css);
 @import url(card/card.css);
 @import url(input/input.css);
+@import url(typography/typography.css);
 @import url(smoke/smoke-light.css);
 
 /* ------------- */
@@ -38,7 +39,7 @@
     --card-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     /* font-size */
-    --fsize-700: 4rem;
+    --fsize-700: 3.25rem;
     --fsize-600: 3rem;
     --fsize-500: 2rem;
     --fsize-400: 1.5rem;
@@ -110,15 +111,6 @@ body {
 
 .grid-container{
     display: grid;
-}
-
-.large-title{
-    font-size: var(--fsize-700);
-    font-weight: var(--fweight-regular);
-    color: var(--color-primary);
-    display: block;
-    text-align: center;
-    font-family: var(--ff-serif);
 }
 
 .fas, .fa, .far, .fal, .fab{

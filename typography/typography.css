@@ -1,0 +1,95 @@
+.large-title{
+    font-size: var(--fsize-600);
+    font-weight: var(--fweight-regular);
+    color: var(--color-complementary);
+    display: block;
+    font-family: var(--ff-serif);
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 600;
+    margin: var(--spacing-medium) 0;
+}
+
+.h1, h1{
+    font-size: var(--fsize-700);
+}
+
+.h2, h2{
+    font-size: var(--fsize-600);
+}
+
+.h3, h3{
+    font-size: var(--fsize-500);
+}
+
+.h4, h4{
+    font-size: var(--fsize-400);
+}
+
+.h5, h5{
+    font-size: 1.35rem;
+}
+
+.h6, h6{
+    font-size: 1.15rem
+}
+
+.strike-text{
+    text-decoration: line-through;
+}
+
+.underline-text{
+    text-decoration: underline;
+}
+
+.red-text{
+    color: red;
+}
+
+.gray-text{
+    color: var(--color-secondary);
+}
+
+.left-text{
+    text-align: left;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.right-text{
+    text-align: right;
+}
+
+.small-text{
+    font-family: var(--fsize-200);
+}
+
+.highlight{
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px){
+    .large-title{
+        font-size: var(--fsize-600);
+    }
+
+    .h1, h1{
+        font-size: var(--fsize-500);
+    }
+
+    .h2, h2{
+        font-size: var(--fsize-400);
+    }
+
+    .h3, h3{
+        font-size: var(--fsize-300);
+    }
+
+    .h4, h4, .h5, h5, .h6, h6{
+        font-size: var(--fsize-200);
+    }
+
+}

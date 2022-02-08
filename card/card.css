@@ -76,11 +76,6 @@
     display: inline-block;
 }
 
-.strike-text{
-    color: var(--color-secondary);
-    font-size: var(--fsize-200);
-}
-
 .red-highlight{
     color: red;
     font-size: 1.1rem;
