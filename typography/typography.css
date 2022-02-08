@@ -1,5 +1,7 @@
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+.h1, .h2, .h3, .h4, .h5, .h6{
     margin: var(--spacing-medium) 0;
+    font-weight: bolder;
+    font-family: var(--ff-serif);
 }
 
 .h1, h1{
@@ -24,6 +26,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
 .h6, h6{
     font-size: 1.15rem
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.italic-text{
+    font-style: italic;
 }
 
 .strike-text{
