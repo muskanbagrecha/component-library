@@ -5,6 +5,7 @@
 @import url(badge/badge.css);
 @import url(card/card.css);
 @import url(input/input.css);
+@import url(lists/lists.css);
 @import url(typography/typography.css);
 @import url(smoke/smoke-light.css);
 
@@ -35,7 +36,7 @@
     --color-current: rgb(247, 247, 247);
     --box-shadow: 0 12px 8px -4px rgba(0, 0, 0, 0.5);
 
-    --card-background: rgba(255, 255, 255, 0.2);
+    --card-background: rgba(197, 185, 185, 0.1);
     --card-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     /* font-size */
@@ -106,7 +107,7 @@ body {
     font-family: var(--ffamily-sans-normal);
     font-size: var(--fsize-300);
     background-color: var(--color-light);
-    color: var(--color-primary);
+    color: var(--color-complementary);
 }
 
 .grid-container{

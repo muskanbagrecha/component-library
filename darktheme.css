@@ -5,6 +5,7 @@
 @import url(badge/badge.css);
 @import url(card/card.css);
 @import url(input/input.css);
+@import url(lists/lists.css);
 @import url(typography/typography.css);
 @import url(smoke/smoke-dark.css);
 
@@ -105,7 +106,7 @@ body {
     font-family: var(--ffamily-sans-normal);
     font-size: var(--fsize-300);
     background-color: var(--color-dark);
-    color: var(--color-primary);
+    color: var(--color-complementary);
 }
 
 .fas, .fa, .far, .fal, .fab{
