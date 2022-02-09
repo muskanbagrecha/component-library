@@ -1,0 +1,142 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(var(--color-complementary-values), 0.1);
+    height: 5rem;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 8rem;
+    height: 5rem;
+}
+
+.navigation .nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 40%;
+}
+
+.navigation .nav-list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation li a, .navigation li a:visited{
+    text-decoration: none;
+    color: var(--color-complementary);
+    display: inline-block;
+}
+
+.tab-underline-indicator>* {
+    padding: 1.4rem 0;
+}
+
+
+.tab-underline-indicator>*:hover,
+.tab-underline-indicator>*:focus {
+    border-bottom: 0.2rem solid var(--color-secondary);
+}
+
+.tab-underline-indicator>.active {
+    border-bottom: 0.2rem solid var(--color-complementary);
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 1.5rem;
+    height: 4px;
+    margin: 5px;
+    background-color: var(--color-complementary);
+}
+
+@media screen and (max-width: 1280px){
+    .navigation .nav-list{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    ul{
+        padding: 0;
+    }
+    .navigation .nav-list{
+        position: absolute;
+        height: calc(100% - 5rem);
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 25%;
+        min-width: 8.8rem;
+        background-color:rgba(var(--color-primary-values), 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navigation-full .nav-list{
+        width: 100%;
+        transform: translateY(-125%);
+    }
+
+    .navigation-left .nav-list{
+        left: 0px;
+        transform: translateX(-100%);
+    }
+
+    .navigation-right .nav-list{
+        right: 0px;
+        transform: translateX(100%);
+    }
+
+    .nav-list li a:hover{
+        color: var(--color-primary);
+        transition: 0.3s ease-in;
+    }
+
+    .burger{
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+
+    .tab-underline-indicator>.active, 
+    .tab-underline-indicator>*:hover,
+    .tab-underline-indicator>*:focus{
+        border-bottom: none;
+    }
+}
+
+/* If user clicks on hamburger icon, the navigation menu will appear. */
+.navigation-left--active .nav-list{
+    transform: translateX(0%);
+}
+
+.navigation-full--active .nav-list{
+    transform: translateY(0%);
+    padding: 0;
+}
+
+.navigation-right--active .nav-list{
+    transform: translateX(0%);
+}
+
+/* To make hamburger into X or Cross */
+.rotate .line1{
+    transform: rotate(-45deg) translate(-6.5px, 6px);
+}
+
+.rotate .line2{
+    opacity: 0;
+}
+
+.rotate .line3{
+    transform: rotate(45deg) translate(-6.5px, -6px);
+}
