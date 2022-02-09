@@ -2,14 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(var(--color-complementary-values), 0.1);
     height: 5rem;
     box-sizing: border-box;
+    background-color: rgba(var(--color-complementary-values), 0.1);
 }
 
 .logo{
     width: 8rem;
-    height: 5rem;
+    height: auto;
 }
 
 .navigation .nav-list{
@@ -77,8 +77,9 @@
         align-items: center;
         width: 25%;
         min-width: 8.8rem;
-        background-color:rgba(var(--color-primary-values), 0.2);
+        background-color: var(--nav-color);
         transition: transform 0.3s ease-in-out;
+        /* position: fixed; */
     }
 
     .navigation-full .nav-list{
@@ -117,6 +118,7 @@
 /* If user clicks on hamburger icon, the navigation menu will appear. */
 .navigation-left--active .nav-list{
     transform: translateX(0%);
+    height: 100vh;
 }
 
 .navigation-full--active .nav-list{

@@ -19,7 +19,7 @@
 
     /* not specifying rgb because I want to change alpha value later on */
 
-    --color-primary: #9180c4;
+    --color-primary: rgb(145, 128, 196);
     --color-primary-values: 145, 128, 196;
     /* --color-primary: rgb(253, 112, 20); */
     
@@ -40,6 +40,8 @@
 
     --card-background: rgba(197, 185, 185, 0.1);
     --card-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    --nav-color: #e9e5f3;
 
     /* font-size */
     --fsize-700: 3.25rem;
