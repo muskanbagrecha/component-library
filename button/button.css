@@ -105,11 +105,11 @@
 /* Icon buttons  */
 .btn-icon {
     cursor: pointer;
-    color: var(--color-primary);
+    color: var(--color-complementary);
 }
 
 .btn-icon:hover {
-    color: var(--color-complementary);
+    color: var(--color-current);
 }
 
 /* Additional styling for icons within text buttons */

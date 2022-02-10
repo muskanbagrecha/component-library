@@ -31,7 +31,31 @@
     display: inline-block;
 }
 
+<<<<<<< Updated upstream:navigation/navigation.css
 .tab-underline-indicator>* {
+=======
+.search-form{
+    position: absolute;
+    top: 115%;
+    right: 10%;
+    transform: scaleY(0);
+    
+}
+
+.search-form input{
+    width: 20rem;
+    height: 2.5rem;
+    color: var(--color-current);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.search-form .btn-icon:hover{
+    color: currentColor;
+}
+
+/* .tab-underline-indicator>* {
+>>>>>>> Stashed changes:component-library-text-lists/navigation/navigation.css
     padding: 1.4rem 0;
 }
 
