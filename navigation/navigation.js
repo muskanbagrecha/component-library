@@ -22,4 +22,14 @@ const navigation = () => {
 
 }
 
+const showSearch = () => {
+    const search = document.querySelector('.search-icon');
+    const searchBar = document.querySelector('.search-bar');
+    search.addEventListener('click', () => {
+        console.log('clicked');
+        searchBar.classList.toggle('search-form--active');
+    })
+}
+
 navigation();
+showSearch();
