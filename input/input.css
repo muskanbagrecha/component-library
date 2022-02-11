@@ -16,7 +16,7 @@
     font-size: 1.2rem;
 }
 
-.input-form input, .input-form textarea{
+.input-form input, .input-form textarea, .input-styled{
     padding: 0.5rem 1rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
@@ -55,3 +55,4 @@
 .input-form .input-success{
     border: 2px solid var(--primary-success-text);
 }
+
