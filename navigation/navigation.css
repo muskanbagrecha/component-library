@@ -58,6 +58,45 @@
     background-color: var(--color-complementary);
 }
 
+.search-form{
+    position: absolute;
+    transform: scaleY(0);
+}
+
+.search-form--active{
+    position: absolute;
+    top: 6rem;
+    right: 10%;
+    transform: scaleY(1);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-form input, .search-form--active input{
+    width: 20rem;
+    height: 2.5rem;
+    color: var(--color-complementary);
+    background-color: var(--nav-color);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--color-complementary);
+}
+
+input:focus{
+    outline: 1px solid var(--color-complementary);
+}
+
+.search-form--active .btn-icon{
+    position: relative;
+    left: -3rem;
+}
+
+/* Remove cross in input */
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+
 @media screen and (max-width: 1280px){
     .navigation .nav-list{
         width: 60%;
@@ -109,6 +148,16 @@
         cursor: pointer;
         margin: 0 1rem;
     }
+
+     .search-bar input{
+        width: 17rem;
+    }
+
+    /*
+    .search-form--active{
+        left: 50%;
+        transform: translate(-50%, 0%);
+    } */
 }
 
 /* If user clicks on hamburger icon, the navigation menu will appear. */
@@ -139,40 +188,3 @@
     transform: rotate(45deg) translate(-6.5px, -6px);
 }
 
-.search-form{
-    position: absolute;
-    transform: scaleY(0);
-}
-
-.search-form--active{
-    position: absolute;
-    top: 115%;
-    right: 10%;
-    transform: scaleY(1);
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
-}
-
-.search-form input, .search-form--active input{
-    width: 22rem;
-    height: 2.5rem;
-    color: var(--color-complementary);
-    background-color: var(--nav-color);
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    border: 1px solid var(--color-complementary);
-}
-
-input:focus{
-    outline: 1px solid var(--color-complementary);
-}
-
-.search-form--active .btn-icon{
-    position: relative;
-    left: -3rem;
-}
-
-/* Remove cross in input */
-input[type="search"]::-webkit-search-cancel-button {
-    display: none;
-}
