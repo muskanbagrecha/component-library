@@ -43,6 +43,19 @@
     color: var(--color-primary);
 }
 
+/* Solid black and white buttons  */
+.btn-black-no-br{
+    color: var(--color-white);
+    border: none;
+    background-color: var(--color-dark);
+}
+
+.btn-white-no-br{
+    color: var(--color-dark);
+    border: none;
+    background-color: var(--color-white);
+}
+
 /*Floating buttons*/
 .btn-floating{
     width: 3.2rem;
