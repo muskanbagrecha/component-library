@@ -9,7 +9,6 @@
     font-size: 1.3rem;
     text-align: center;
     text-decoration: none;
-    margin: var(--spacing-small);
     padding: var(--spacing-small) var(--spacing-medium);
     transition: all 0.3s ease 0s;
     font-family: var(--ff-serif);
@@ -48,12 +47,14 @@
     color: var(--color-white);
     border: none;
     background-color: var(--color-dark);
+    border-radius: 0;
 }
 
 .btn-white-no-br{
     color: var(--color-dark);
     border: none;
     background-color: var(--color-white);
+    border-radius: 0;
 }
 
 /*Floating buttons*/

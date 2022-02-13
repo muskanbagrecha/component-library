@@ -1,20 +1,44 @@
-.rating-container {
+/* Static Rating for display only */
+.static-rating{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--card-background);
-    padding: 1rem 2rem;
-    border-radius: var(--bradius-small);
-    width: fit-content;
-    border: 1px solid var(--color-secondary);
+}
+.static-rating > .checked{
+    color: #FFD700;
 }
 
-.star input{
+/* Interative rating */
+
+.interactive-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    border-radius: 5px;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stars > label{
+    cursor: pointer;
+    color: var(--color-complementary);
+    transition: all .2s ease;
+}
+
+.stars > input{
     display: none;
 }
 
-.star label{
-    color: rgba(177, 174, 174, 0.5);
-    font-size: 1.5rem;
-    cursor: pointer;
+.stars input:not(:checked) ~ label:hover,
+.stars input:not(:checked) ~ label:hover ~ label{
+    color: #FFD700;
+}
+
+.stars input:checked ~ label{
+    color: #FFD700;
 }
