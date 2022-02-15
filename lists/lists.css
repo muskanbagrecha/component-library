@@ -39,3 +39,8 @@
 .list-upper-roman{
     list-style: upper-roman;
 }
+
+/* Stacked lists */
+.list-style{
+    list-style: none;
+}
