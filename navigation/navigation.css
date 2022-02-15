@@ -23,7 +23,7 @@
 }
 
 .navigation .icons{
-    width: 25%;
+    width: 30%;
 }
 
 .navigation .nav-list li{
@@ -158,7 +158,6 @@ input[type="search"]::-webkit-search-cancel-button {
     .icon-bar{
         position: relative;
         height: fit-content;
-
     }
 
     .search-bar{

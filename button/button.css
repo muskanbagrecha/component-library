@@ -136,14 +136,13 @@
 .btn-link-text {
     display: inline-block;
     cursor: pointer;
-    color: var(--color-complementary);
-    padding-bottom: var(--spacing-xsmall);
-    border-bottom: 1px solid var(--color-primary);
-    text-decoration-line: var(--color-primary);
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 .btn-link-text:hover {
     color: var(--color-primary);
+    text-decoration: underline;
 }
 
 /* Secondary buttons */
