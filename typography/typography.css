@@ -79,12 +79,18 @@
 }
 
 .medium-title{
-    
+    font-size: var(--fsize-600);
+    font-weight: var(--fweight-regular);
+    font-family: var(--ff-serif);
 }
 
 @media screen and (max-width: 768px){
     .large-title{
         font-size: var(--fsize-600);
+    }
+
+    .medium-title{
+        font-size: var(--fsize-500);
     }
 
     .h1, h1{
