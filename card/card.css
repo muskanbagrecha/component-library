@@ -68,17 +68,16 @@
 }
 
 .card__desc small {
-    color: var(--color-secondary);
+    color: var(--color-dark);
 }
 
-.card__amount>* {
+.card__amount>*{
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .red-highlight {
     color: red;
-    font-size: 1.25rem;
 }
 
 .card .component-close {
@@ -112,7 +111,6 @@
 
 .card__badge {
     position: absolute;
-    /* wrt to card */
     top: 1.5rem;
     width: fit-content;
     height: fit-content;
