@@ -1,0 +1,46 @@
+.list{
+    padding: 1rem 3rem;
+    background-color: var(--card-background);
+    display: inline-block; 
+    margin:  0.8rem 3px;
+}
+
+/*  Unordered lists */
+
+.list-primary{
+    list-style: none;
+}
+
+.list-primary li::before{
+    content: "\2022";
+    color: var(--color-primary);
+    margin: 1rem;
+    margin-left: -1em;
+}
+
+.list-square{
+    list-style: square;
+}
+
+.list-hollow-circle{
+    list-style: circle;
+}
+
+/* Ordered lists */
+
+.list-alphabets{
+    list-style: lower-alpha;
+}
+
+.list-lower-roman{
+    list-style: lower-roman;
+}
+
+.list-upper-roman{
+    list-style: upper-roman;
+}
+
+/* Stacked lists */
+.no-list-style{
+    list-style: none;
+}

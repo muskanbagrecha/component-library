@@ -1,0 +1,45 @@
+/* Static Rating for display only */
+.static-rating{
+    display: flex;
+}
+.static-rating > .checked{
+    color: #FFD700;
+}
+
+/* Interative rating */
+
+.interactive-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stars > label{
+    cursor: pointer;
+    color: var(--color-complementary);
+    transition: all .2s ease;
+}
+
+.stars > input{
+    display: none;
+}
+
+.stars input:not(:checked) ~ label:hover,
+.stars input:not(:checked) ~ label:hover ~ label{
+    color: #FFD700;
+}
+
+.stars input:checked ~ label{
+    color: #FFD700;
+}

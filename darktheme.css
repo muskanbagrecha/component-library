@@ -5,7 +5,12 @@
 @import url(badge/badge.css);
 @import url(card/card.css);
 @import url(input/input.css);
+@import url(lists/lists.css);
+@import url(navigation/navigation.css);
+@import url(rating/rating.css);
+@import url(typography/typography.css);
 @import url(smoke/smoke-dark.css);
+
 
 /* ------------- */
 /* Setting up the custom properties */
@@ -18,6 +23,8 @@ html {
 
 
 :root {
+
+    --pure-theme-color: #000;
 
     --color-primary: rgb(145, 128, 196);
     --color-primary-values: 145, 128, 196;
@@ -35,9 +42,11 @@ html {
     --card-background: rgba(255, 255, 255, 0.2);
     --card-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
+    --nav-color: #484062;
+
     /* font-size */
-    --fsize-700: 4rem;
-    --fsize-600: 3rem;
+    --fsize-700: 3.25rem;
+    --fsize-600: 2.5rem;
     --fsize-500: 2rem;
     --fsize-400: 1.5rem;
     --fsize-300: 1.25rem;
@@ -103,17 +112,7 @@ body {
     font-family: var(--ffamily-sans-normal);
     font-size: var(--fsize-300);
     background-color: var(--color-dark);
-    color: var(--color-primary);
-}
-
-.large-title{
-    font-size: var(--fsize-700);
-    font-weight: var(--fweight-regular);
-    color: var(--color-primary);
-    display: block;
-    text-align: center;
-    font-family: var(--ff-serif);
-    margin-top: 1rem;
+    color: var(--color-complementary);
 }
 
 .fas, .fa, .far, .fal, .fab{

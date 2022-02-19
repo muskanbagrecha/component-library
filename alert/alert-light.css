@@ -18,7 +18,7 @@
     align-items: center;
     padding: var(--spacing-medium) var(--spacing-small);
     margin: var(--spacing-small);
-    min-width: 17rem;
+    /* min-width: 17rem; */
     border-radius: var(--bradius-small);
     font-size: var(--fsize-300);
     font-weight: 400;

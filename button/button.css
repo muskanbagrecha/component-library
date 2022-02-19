@@ -9,7 +9,6 @@
     font-size: 1.3rem;
     text-align: center;
     text-decoration: none;
-    margin: var(--spacing-small);
     padding: var(--spacing-small) var(--spacing-medium);
     transition: all 0.3s ease 0s;
     font-family: var(--ff-serif);
@@ -41,6 +40,21 @@
     background-color: transparent;
     border: 1px solid currentColor;
     color: var(--color-primary);
+}
+
+/* Solid black and white buttons  */
+.btn-black-no-br{
+    color: var(--color-white);
+    border: none;
+    background-color: var(--color-dark);
+    border-radius: 0;
+}
+
+.btn-white-no-br{
+    color: var(--color-dark);
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 0;
 }
 
 /*Floating buttons*/
@@ -105,11 +119,11 @@
 /* Icon buttons  */
 .btn-icon {
     cursor: pointer;
-    color: var(--color-primary);
+    color: var(--color-complementary);
 }
 
 .btn-icon:hover {
-    color: var(--color-complementary);
+    color: var(--color-current);
 }
 
 /* Additional styling for icons within text buttons */
@@ -122,14 +136,13 @@
 .btn-link-text {
     display: inline-block;
     cursor: pointer;
-    color: var(--color-complementary);
-    padding-bottom: var(--spacing-xsmall);
-    border-bottom: 1px solid var(--color-primary);
-    text-decoration-line: var(--color-primary);
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 .btn-link-text:hover {
     color: var(--color-primary);
+    text-decoration: underline;
 }
 
 /* Secondary buttons */
