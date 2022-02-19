@@ -1,0 +1,20 @@
+.toast{
+    background-color: #323332;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    min-width: 30rem;
+    height: 4rem;
+    color: var(--color-white);
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toast.leading{
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
