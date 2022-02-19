@@ -54,7 +54,7 @@
 }
 
 .burger div{
-    width: 1.5rem;
+    width: 20px;
     height: 4px;
     margin: 5px;
     background-color: var(--color-complementary);

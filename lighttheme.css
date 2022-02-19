@@ -19,9 +19,10 @@
 
     /* not specifying rgb because I want to change alpha value later on */
 
+    --pure-theme-color: #fff;
+
     --color-primary: rgb(145, 128, 196);
     --color-primary-values: 145, 128, 196;
-    /* --color-primary: rgb(253, 112, 20); */
     
     --color-white: rgb(247, 247, 247);
     --color-white-values: 247, 247, 247;

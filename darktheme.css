@@ -24,6 +24,8 @@ html {
 
 :root {
 
+    --pure-theme-color: #000;
+
     --color-primary: rgb(145, 128, 196);
     --color-primary-values: 145, 128, 196;
 
@@ -41,7 +43,6 @@ html {
     --card-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     --nav-color: #484062;
-    
 
     /* font-size */
     --fsize-700: 3.25rem;
