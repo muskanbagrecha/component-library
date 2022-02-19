@@ -2,9 +2,10 @@
     background-color: var(--toast-color);
     display: flex;
     justify-content: space-evenly;
+    width: fit-content;
+    gap: 2rem;
+    padding: 2rem;
     align-items: center;
-    width: 25%;
-    min-width: 30rem;
     height: 4rem;
     color: var(--color-white);
     border-radius: 7px;
@@ -16,12 +17,10 @@
 }
 
 .toast--success{
-    background-color: var(--primary-success-bg);
     color: var(--primary-success-text);
 }
 
 .toast--danger{
-    background-color: var(--primary-danger-bg);
     color: var(--primary-danger-text);
 }
 

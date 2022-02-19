@@ -12,14 +12,11 @@
     grid-template-areas: "left-content right-content";
 }
 
-.img-container{
+.left-content{
+    grid-area: left-content;
+}
+
+.right-content{
     grid-area: right-content;
 }
 
-.text-container{
-    grid-area: left-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
