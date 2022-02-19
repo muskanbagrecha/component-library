@@ -1,5 +1,5 @@
 .toast{
-    background-color: #323332;
+    background-color: var(--toast-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -9,6 +9,20 @@
     color: var(--color-white);
     border-radius: 7px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toast--primary{
+    background-color: var(--color-primary);
+}
+
+.toast--success{
+    background-color: var(--primary-success-bg);
+    color: var(--primary-success-text);
+}
+
+.toast--danger{
+    background-color: var(--primary-danger-bg);
+    color: var(--primary-danger-text);
 }
 
 .toast.leading{

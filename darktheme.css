@@ -6,8 +6,10 @@
 @import url(card/card.css);
 @import url(input/input.css);
 @import url(lists/lists.css);
+@import url(grid/grid.css);
 @import url(navigation/navigation.css);
 @import url(rating/rating.css);
+@import url(toast/toast.css);
 @import url(typography/typography.css);
 @import url(smoke/smoke-dark.css);
 
@@ -24,7 +26,7 @@ html {
 
 :root {
 
-    --pure-theme-color: #000;
+    --pure-theme-color: rgb(247, 247, 247);;
 
     --color-primary: rgb(145, 128, 196);
     --color-primary-values: 145, 128, 196;
@@ -43,6 +45,7 @@ html {
     --card-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     --nav-color: #484062;
+    --toast-color: #323332;
 
     /* font-size */
     --fsize-700: 3.25rem;

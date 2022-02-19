@@ -1,13 +1,9 @@
-body{
-    background-color: black;
-}
-
 .smoke-effect{
     display: block;
 }
 
 .smoke-video{
     object-fit: cover;
-    height: 80vh;
+    height: 50vh;
     width: 100%;
 }
