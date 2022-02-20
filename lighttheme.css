@@ -10,6 +10,7 @@
 @import url(modal/modal.css);
 @import url(navigation/navigation.css);
 @import url(rating/rating.css);
+@import url(slider/slider.css);
 @import url(toast/toast.css);
 @import url(typography/typography.css);
 @import url(smoke/smoke-light.css);
@@ -22,7 +23,7 @@
 
     /* not specifying rgb because I want to change alpha value later on */
 
-    --pure-theme-color: #fff;
+    --pure-theme-color: rgb(247, 247, 247);
 
     --color-primary: rgb(145, 128, 196);
     --color-primary-values: 145, 128, 196;

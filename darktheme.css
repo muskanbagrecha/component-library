@@ -10,6 +10,7 @@
 @import url(modal/modal.css);
 @import url(navigation/navigation.css);
 @import url(rating/rating.css);
+@import url(slider/slider.css);
 @import url(toast/toast.css);
 @import url(typography/typography.css);
 @import url(smoke/smoke-dark.css);
@@ -27,7 +28,7 @@ html {
 
 :root {
 
-    --pure-theme-color: rgb(247, 247, 247);;
+    --pure-theme-color: #000;
 
     --color-primary: rgb(145, 128, 196);
     --color-primary-values: 145, 128, 196;
