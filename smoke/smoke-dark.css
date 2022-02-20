@@ -1,5 +1,7 @@
 .smoke-effect{
     display: block;
+    position: fixed;
+    z-index: 1;
 }
 
 .smoke-video{
