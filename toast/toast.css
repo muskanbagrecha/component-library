@@ -18,10 +18,12 @@
 
 .toast--success{
     color: var(--primary-success-text);
+    background-color: var(--primary-success-bg);
 }
 
 .toast--danger{
     color: var(--primary-danger-text);
+    background-color: var(--primary-danger-bg);
 }
 
 .toast.leading{
