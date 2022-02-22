@@ -68,7 +68,7 @@
 }
 
 .card__desc small {
-    color: var(--color-dark);
+    color: var(--color-complementary);
 }
 
 .card__amount>*{

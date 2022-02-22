@@ -5,6 +5,7 @@
     display: inline-block;
     width: fit-content;
     min-width: 8rem; /* this is to maintain uniformity of buttons.*/
+    min-height: 2.5rem;
     border-radius: var(--spacing-small);
     font-size: 1.3rem;
     text-align: center;
