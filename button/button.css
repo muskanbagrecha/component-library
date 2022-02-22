@@ -10,7 +10,6 @@
     font-size: 1.3rem;
     text-align: center;
     text-decoration: none;
-    min-height: 1rem;
     transition: all 0.3s ease 0s;
     font-family: var(--ff-serif);
     border: 1px solid var(--color-light);
@@ -182,16 +181,4 @@
     box-shadow: none;
     transform: none;
     pointer-events: none;
-}
-
-/* Card badge */
-.card__badge{
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    background-color: var(--color-primary);
-    color: var(--color-complementary);
-    padding: 5px;
-    top: 2rem;
-    font-size: var(--fsize-200);
 }
