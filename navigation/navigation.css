@@ -124,6 +124,7 @@ input[type="search"]::-webkit-search-cancel-button {
         transition: transform 0.3s ease-in-out;
         /* position: fixed; */
         z-index: 10;
+        font-size: 1.5rem;
     }
 
     .navigation .icons{
@@ -160,14 +161,6 @@ input[type="search"]::-webkit-search-cancel-button {
         height: fit-content;
     }
 
-    .search-bar{
-        position: absolute;
-        top: 6rem;
-        right: 10%;
-        transform: scaleY(1);
-        z-index: 1;
-        transition: all 0.3s ease-in-out;
-    }
 }
 
 /* If user clicks on hamburger icon, the navigation menu will appear. */
