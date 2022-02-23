@@ -32,8 +32,8 @@
 }
 
 .navigation .nav-list li a:hover, .nav-list .active{
-    color: var(--color-dark);
-    border-bottom: 2px solid var(--color-dark);
+    color: var(--color-complementary);
+    border-bottom: 2px solid var(--color-complementary);
     transition: all 0.2s ease-in-out;
 }
 
