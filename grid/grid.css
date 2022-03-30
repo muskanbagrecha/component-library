@@ -12,6 +12,21 @@
     grid-template-areas: "left-content right-content";
 }
 
+.grid-3-col-1-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "item-1 item-2 item-3";
+}
+
+.grid-2-col-2-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "item-1 item-2"
+                        "item-3 item-3";
+}
+
 .left-content{
     grid-area: left-content;
 }
@@ -20,3 +35,14 @@
     grid-area: right-content;
 }
 
+.item-1{
+    grid-area: item-1;
+}
+
+.item-2{
+    grid-area: item-2;
+}
+
+.item-3{
+    grid-area: item-3;
+}
